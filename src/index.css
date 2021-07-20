@@ -1,0 +1,212 @@
+/* All styles for all class components */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  background-color: indianred;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Main container contents basic layout */
+#main-container{
+  width: 280px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 5rem;
+  left: 40%;
+  border: 10px #28282B solid;
+  border-top-width: 45px;
+  border-bottom-width: 45px;
+  border-radius: 36px;
+  background-image: linear-gradient(to right, #040404, #000000, #656565);
+  box-shadow: 10px 10px 16px #000000
+}
+
+img{
+  height: inherit;
+  width: inherit;
+}
+
+/* Box that contains big circle and small circle */
+#box{
+  height:230px;
+  width: 230px;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+
+/* Big wheels property */
+#bigCircle{
+  border-radius: 50%;
+  position: relative;
+  justify-content: space-around;
+  height: 70%;
+  width: 70%;
+  border: 2px solid gray;
+  background-color: lightgray;
+
+}
+
+.buttons{
+  display: block ; 
+  height: 23px;
+  width: 30px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  border: none;
+  background-color: grey;
+  font-weight: bold;
+  
+}
+
+/* Buttons property inside the player */
+.buttons button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: lightgrey;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Setting up the buttons top left right bottom */
+#top{
+  transform:translateY(-65px) translateX(-20px);
+}
+
+#right{
+  transform:  translateX(-72px) translateY(-7px);
+}
+
+#left{
+  transform: translateX(55px) translateY(-7px);
+}
+
+#bottom{
+  
+  transform: translateY(55px) translateX(-6px) scale(1.3);;
+}
+
+/* Setting up the propety of small circle */
+#smallCircle{
+  position: absolute;
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+  left: 35%;
+  top: 35%; 
+  background-color: #363333;
+  border: 2px solid gray;
+  background-image: linear-gradient(to right, #040404, #000000, #656565);
+} 
+
+#circle{
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #040404, #000000);
+}
+
+/* Screen propety */
+#screen{
+  display: flex;
+  position: relative;
+  height: 290px;
+  width: 98%;
+  color: #ff5733;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 2px solid black;
+  box-shadow:  0 0 10px #000000;
+  background-image: url("https://images.unsplash.com/photo-1513438205128-16af16280739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+/* Background of screen  */
+.background{
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  text-align: center;
+  justify-content: center;
+}
+ 
+.background h1{
+  margin:0px;
+  margin-bottom: 20px;
+}
+
+/* Background images properties */
+.background img{
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+#meme{
+  height: 100px;
+  width: 100px;
+}
+
+/* Sidebar properties */
+#sideBar{
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #363333;
+  padding: 1%;
+}
+
+#head{
+  height: 20%;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 10%;
+  color: whitesmoke;
+}
+
+#body-container{
+  height: 80%;
+}
+
+#body-container> div{
+  height: 20%;
+  width: 100%;
+
+}
+
+/* Whevever a state is active */
+.active{
+  background-color: chocolate;
+  color: #181818
+}
+
+#screen1{
+
+  position: relative;
+  height: inherit;
+  width: inherit;
+
+}
+
+#player{
+  width: 230px;
+  height: 30px;
+  margin: 10px;
+}
